@@ -1,6 +1,6 @@
 import pytest
 
-from _erfa_cffi.lib import eraEpb
+from erfa_cffi import eraEpb
 
 
 def test_epb():

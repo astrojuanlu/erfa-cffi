@@ -3,12 +3,12 @@
 ## Proof of concept
 
 ```bash
-$ C_INCLUDE_PATH=$(pwd)/../erfa/src/ LIBRARY_PATH=$(pwd)/../erfa/src/.libs/ python erfa_wrapper.py
-$ LD_LIBRARY_PATH=$(pwd)/../erfa/src/.libs/ python -c "from _erfa_cffi import lib; print(lib.eraEpb(2415019.8135, 30103.18648))"
+$ C_INCLUDE_PATH=$(pwd)/../erfa/src/ LIBRARY_PATH=$(pwd)/../erfa/src/.libs/ pip install -e .
+$ LD_LIBRARY_PATH=$(pwd)/../erfa/src/.libs/ python -c "from erfa_cffi import eraEpb; print(eraEpb(2415019.8135, 30103.18648))"
 ```
 
 To run the tests:
 
 ```bash
-$ PYTHONPATH=$(pwd) LD_LIBRARY_PATH=$(pwd)/../erfa/src/.libs/ pytest
+$ LD_LIBRARY_PATH=$(pwd)/../erfa/src/.libs/ pytest
 ```
