@@ -1,4 +1,4 @@
-# ERFA CFFI wrapper
+# CFFI wrapper for ERFA
 
 ## Proof of concept
 
