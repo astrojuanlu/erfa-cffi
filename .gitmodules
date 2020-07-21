@@ -1,0 +1,3 @@
+[submodule "liberfa"]
+	path = liberfa
+	url = https://github.com/liberfa/erfa.git
